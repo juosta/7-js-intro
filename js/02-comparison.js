@@ -14,15 +14,15 @@ if (a < b) {
     console.log("Bandykite dar karta")
 }
 
-console.log("Salyga: ", 'a == b');
-if (a == b) {
+console.log("Salyga: ", 'a === b');
+if (a === b) {
     console.log("pomidoras");
 } else {
     console.log("Bandykite dar karta")
 }
 
-console.log("Salyga: ", 'a != b');
-if (a != b) {
+console.log("Salyga: ", 'a !== b');
+if (a !== b) {
     console.log("pomidoras");
 } else {
     console.log("Bandykite dar karta")
@@ -67,15 +67,15 @@ if (vardoilgis < pavardesilgis) {
     console.log("Bandykite dar karta")
 }
 
-console.log("Salyga: ", 'vardo ilgis == pavardes ilgis');
-if (vardoilgis == pavardesilgis) {
+console.log("Salyga: ", 'vardo ilgis === pavardes ilgis');
+if (vardoilgis === pavardesilgis) {
     console.log("pomidoras");
 } else {
     console.log("Bandykite dar karta")
 }
 
-console.log("Salyga: ", 'vardo ilgis != pavardes ilgis');
-if (vardoilgis != pavardesilgis) {
+console.log("Salyga: ", 'vardo ilgis !== pavardes ilgis');
+if (vardoilgis !== pavardesilgis) {
     console.log("pomidoras");
 } else {
     console.log("Bandykite dar karta")
@@ -96,9 +96,53 @@ if (vardoilgis <= pavardesilgis) {
 }
 
 // 4 
-const miest_sar_ilg = [miestai[0].length, miestai[1].length, miestai[2].length, miestai[3].length, miestai[4].length]
+const miest_sar_ilg = miestai.length;
+const vard_sar_ilg = vardai.length;
+const abc_ilgis = abc.length;
 console.log(miest_sar_ilg);
-const vard_sar_ilg = [vardai[0].length, vardai[1].length, vardai[2].length, vardai[3].length, vardai[4].length]
 console.log(vard_sar_ilg);
+console.log(abc_ilgis);
 
 // 5
+
+console.log("Salyga: ", 'Miestu saraso ilgis > Vardu saraso ilgis');
+if (miest_sar_ilg > vard_sar_ilg) {
+    console.log("pomidoras");
+} else {
+    console.log("Bandykite dar karta")
+}
+
+console.log("Salyga: ", 'Miestu saraso ilgis < Vardu saraso ilgis');
+if (miest_sar_ilg < vard_sar_ilg) {
+    console.log("pomidoras");
+} else {
+    console.log("Bandykite dar karta")
+}
+
+console.log("Salyga: ", 'Miestu saraso ilgis === Vardu saraso ilgis');
+if (miest_sar_ilg === vard_sar_ilg) {
+    console.log("pomidoras");
+} else {
+    console.log("Bandykite dar karta")
+}
+
+console.log("Salyga: ", 'Miestu saraso ilgis !== Vardu saraso ilgis');
+if (miest_sar_ilg !== vard_sar_ilg) {
+    console.log("pomidoras");
+} else {
+    console.log("Bandykite dar karta")
+}
+
+console.log("Salyga: ", 'Miestu saraso ilgis >= Vardu saraso ilgis');
+if (miest_sar_ilg >= vard_sar_ilg) {
+    console.log("pomidoras");
+} else {
+    console.log("Bandykite dar karta")
+}
+
+console.log("Salyga: ", 'Miestu saraso ilgis <= Vardu saraso ilgis');
+if (miest_sar_ilg <= vard_sar_ilg) {
+    console.log("pomidoras");
+} else {
+    console.log("Bandykite dar karta")
+}

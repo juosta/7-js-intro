@@ -69,3 +69,12 @@ console.log(miestai_reiksme);
 
 const vardai_reiksme = vardai[4] + ', ' + vardai[3] + ', ' + vardai[2] + ', ' + vardai[1] + ', ' + vardai[0];
 console.log(vardai_reiksme);
+
+//-----------------------------------------------------------------------
+// Is mums zinomos 5 raidziu abeceles paskutine yra "e"
+const abcilgis = abc.length;
+const paskutinesRaidesPozicija = abcilgis - 1;
+const paskutineraide = abc[paskutinesRaidesPozicija];
+
+const abcAtsakymas = 'Is mums zinomos ' + abcilgis + ' raidziu abeceles paskutine yra "' + paskutineraide + '"';
+console.log(abcAtsakymas);
