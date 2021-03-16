@@ -9,45 +9,55 @@ f) -70 - 30
 */
 
 // a
+let nuo = 0;
+let iki = 0;
+
 let suma = 0;
 let i=0;
-for (i = 0; i <= 0; i++) {
+for (i = nuo; i <= iki; i++) {
   suma += i;
 }
 console.log(suma);
 
 // b
+iki = 4;
 suma = 0;
-for (i = 0; i <= 4; i++) {
+for (i = nuo; i <= iki; i++) {
   suma += i;
 }
 console.log(suma);
 
 // c
-
+iki = 100;
 suma = 0;
-for (i = 0; i <= 100; i++) {
+for (i = nuo; i <= iki; i++) {
   suma += i;
 }
 console.log(suma);
 
 // d
+nuo = 574;
+iki = 815;
 suma = 0;
-for (i = 574; i <= 815; i++) {
+for (i = nuo; i <= iki; i++) {
   suma += i;
 }
 console.log(suma);
 
 //e
+nuo = -50;
+iki = 50;
 suma = 0;
-for (i = -50; i <= 50; i++) {
+for (i = nuo; i <= iki; i++) {
   suma += i;
 }
 console.log(suma);
 
 //f
+nuo = -70;
+iki = 30;
 suma = 0;
-for (i = -70; i <= 30; i++) {
+for (i = nuo; i <= iki; i++) {
   suma += i;
 }
 console.log(suma);
@@ -61,7 +71,14 @@ let atvirksciai="";
 for(i = raides.length-1; i >= 0; i--){
     atvirksciai += raides [i];
 }
-console.log('RAIDES', atvirksciai);
+console.log(raides,'->', atvirksciai);
+
+ raides = 'abcdef';
+ atvirksciai="";
+for(i = raides.length; i > 0; i--){
+    atvirksciai += raides [i-1];
+}
+console.log(raides,'->', atvirksciai);
 
 /* 3
 Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
@@ -75,64 +92,71 @@ Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 viene
 */
 
 // a) intervale [0;11]
-const intervalas1 = '0 ir 11';
+const nuo1 = 0;
+const iki1 = 11;
 let dalijasi3 = 0;
 let dalijasi5 = 0;
 let dalijasi7 = 0;
+const daliklis1 = 3;
+const daliklis2 = 5;
+const daliklis3 = 7;
 i=0;
-for(i = 0; i <= 11; i++){
-        if(Number.isInteger(i/3)){
-            dalijasi3++;
-        }
-        if(Number.isInteger(i/5)){
-            dalijasi5++;
-        }
-        if(Number.isInteger(i/7)){
-            dalijasi7++;
-        }
+for(i = nuo1; i <= iki1; i++){
+  if(i % daliklis1 === 0){
+      dalijasi3++;
+  }
+  if(i % daliklis2 === 0){
+      dalijasi5++;
+  }
+  if(i % daliklis3 === 0){
+      dalijasi7++;
+  }
 }
-console.log(`Skaičių intervale tarp ${intervalas1}, besidalijančių be liekanos iš 3 yra ${dalijasi3} vienetai.`);
-console.log(`Skaičių intervale tarp ${intervalas1}, besidalijančių be liekanos iš 5 yra ${dalijasi5} vienetai.`);
-console.log(`Skaičių intervale tarp ${intervalas1}, besidalijančių be liekanos iš 7 yra ${dalijasi7} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo1} ir ${iki1}, besidalijančių be liekanos iš 3 yra ${dalijasi3} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo1} ir ${iki1}, besidalijančių be liekanos iš 5 yra ${dalijasi5} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo1} ir ${iki1}, besidalijančių be liekanos iš 7 yra ${dalijasi7} vienetai.`);
 
 // b) intervale [8;31]
-const intervalas2 = '8 ir 31';
+const nuo2 = 8;
+const iki2 = 31;
+
 dalijasi3 = 0;
 dalijasi5 = 0;
 dalijasi7 = 0;
 i=0;
-for(i = 8; i <= 31; i++){
-        if(Number.isInteger(i/3)){
+for(i = nuo2; i <= iki2; i++){
+        if(i % daliklis1 === 0){
             dalijasi3++;
         }
-        if(Number.isInteger(i/5)){
+        if(i % daliklis2 === 0){
             dalijasi5++;
         }
-        if(Number.isInteger(i/7)){
+        if(i % daliklis3 === 0){
             dalijasi7++;
         }
 }
-console.log(`Skaičių intervale tarp ${intervalas2}, besidalijančių be liekanos iš 3 yra ${dalijasi3} vienetai.`);
-console.log(`Skaičių intervale tarp ${intervalas2}, besidalijančių be liekanos iš 5 yra ${dalijasi5} vienetai.`);
-console.log(`Skaičių intervale tarp ${intervalas2}, besidalijančių be liekanos iš 7 yra ${dalijasi7} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo2} ir ${iki2}, besidalijančių be liekanos iš 3 yra ${dalijasi3} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo2} ir ${iki2}, besidalijančių be liekanos iš 5 yra ${dalijasi5} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo2} ir ${iki2}, besidalijančių be liekanos iš 7 yra ${dalijasi7} vienetai.`);
 
 // c) intervale [-18;18]
-const intervalas3 = '-18 ir 18';
+const nuo3 = -18
+const iki3 = 18;
 dalijasi3 = 0;
 dalijasi5 = 0;
 dalijasi7 = 0;
 i=0;
-for(i = -18; i <= 18; i++){
-        if(Number.isInteger(i/3)){
-            dalijasi3++;
-        }
-        if(Number.isInteger(i/5)){
-            dalijasi5++;
-        }
-        if(Number.isInteger(i/7)){
-            dalijasi7++;
-        }
+for(i = nuo3; i <= iki3; i++){
+  if(i % daliklis1 === 0){
+      dalijasi3++;
+  }
+  if(i % daliklis2 === 0){
+      dalijasi5++;
+  }
+  if(i % daliklis3 === 0){
+      dalijasi7++;
+  }
 }
-console.log(`Skaičių intervale tarp ${intervalas3}, besidalijančių be liekanos iš 3 yra ${dalijasi3} vienetai.`);
-console.log(`Skaičių intervale tarp ${intervalas3}, besidalijančių be liekanos iš 5 yra ${dalijasi5} vienetai.`);
-console.log(`Skaičių intervale tarp ${intervalas3}, besidalijančių be liekanos iš 7 yra ${dalijasi7} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo3} ir ${iki3}, besidalijančių be liekanos iš 3 yra ${dalijasi3} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo3} ir ${iki3}, besidalijančių be liekanos iš 5 yra ${dalijasi5} vienetai.`);
+console.log(`Skaičių intervale tarp ${nuo3} ir ${iki3}, besidalijančių be liekanos iš 7 yra ${dalijasi7} vienetai.`);
