@@ -27,7 +27,7 @@ rezultatas: teisingos reikšmės;
 */
 
 function daugyba(a, b){
-    let sandauga = a * b;
+    const sandauga = a * b;
     return sandauga;
 }
 const skaicius1 = 2;
