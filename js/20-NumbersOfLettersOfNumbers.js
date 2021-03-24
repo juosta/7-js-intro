@@ -12,8 +12,6 @@ function numbersOfLetters(integer) {
         numberword = integer;      
     }
     array.push(numberword);
-
-    
     while(array[array.length-1] !== "four"){
     length = numberword.length;
     if (length >= 10){
@@ -24,23 +22,8 @@ function numbersOfLetters(integer) {
         array.push(numberword);
     }
     }
-    console.log(c);
-
     return array;
   }
-
-//   function numToLet (num){
-//     const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-//     let numW ='';
-//     if(typeof num === 'number'){
-//         for(let i =0; i < `${num}`.length; i++){
-//             numW += words[`${num}`[i]];
-//         }
-//     } else {
-//         numW = num;      
-//     }
-//     return numW;
-//   }
 
 console.log(numbersOfLetters(1), ["one", "three", "five", "four"]);
 console.log(numbersOfLetters(4), "four");
